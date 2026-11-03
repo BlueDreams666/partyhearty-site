@@ -3,8 +3,8 @@
   --text: #121216;
   --muted: #5f6070;
   --line: #e4e4ec;
-  --blue: #0000e6;
-  --link: #0000e6;
+  --blue: #053a4f;
+  --link: #053a4f;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -12,7 +12,8 @@
     --text: #ececf2;
     --muted: #9b9caa;
     --line: #262630;
-    --link: #7c86ff;
+    --blue: #52cbe3;
+    --link: #52cbe3;
   }
 }
 * { box-sizing: border-box; }
