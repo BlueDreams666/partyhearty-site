@@ -35,7 +35,8 @@ ul { padding-left: 20px; margin: 0 0 16px; }
 li { margin-bottom: 6px; }
 kbd { font: 0.9em ui-monospace, Menlo, monospace; border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 5px; padding: 1px 5px; }
 .q { font-weight: 600; margin-bottom: 2px; }
-.note { color: var(--muted); font-size: 0.92rem; }
+.note { color: var(--muted); font-size: 0.92rem; text-wrap: balance; }
+.nb { white-space: nowrap; }
 footer { max-width: 620px; margin: 0 auto; padding: 16px 20px 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.92rem; }
 footer a { color: inherit; margin-right: 14px; }
 :root { --pp: var(--link); }
@@ -81,3 +82,6 @@ body.pp { text-align: center; }
   .pp main { padding: 40px 18px 28px; }
   .pp h2::before { margin-top: 36px; }
 }
+
+/* Even line lengths, no stray last words */
+p, li, .pp main > p, .pp main > ul, .pp main > ol { text-wrap: balance; }
