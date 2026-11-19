@@ -1,24 +1,24 @@
 /* Party Hearty: a tidy desk with toys on it. Rubik throughout, rounded and friendly, never cartoonish. */
 :root {
   color-scheme: light dark;
-  --desk: #f6f8fa;
-  --ink: #16191d;
-  --soft: #5a616a;
-  --rule: #dce1e6;
-  --accent: #053A4F;
-  --select: rgba(5, 58, 79, .16);
+  --desk: #fdf2f5;
+  --ink: #2a1730;
+  --soft: #6d5a70;
+  --rule: #f0dbe3;
+  --accent: #7a2a78;
+  --select: rgba(31, 158, 154, .22);
   --key: #ffffff;
   --sans: "Rubik", -apple-system, "Helvetica Neue", Arial, sans-serif;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --desk: #0e1114;
-    --ink: #e9ecef;
-    --soft: #9ca3ab;
-    --rule: #262c32;
-    --accent: #3092B5;
-    --select: rgba(48, 146, 181, .3);
-    --key: #1a1f24;
+    --desk: #1a1220;
+    --ink: #f3e9f1;
+    --soft: #b6a4b6;
+    --rule: #34263b;
+    --accent: #f2a0cb;
+    --select: rgba(31, 158, 154, .35);
+    --key: #261b2d;
   }
 }
 * { box-sizing: border-box; }
@@ -33,7 +33,7 @@ main, footer { width: min(100% - 40px, 38rem); margin-inline: auto; }
 main { padding: 64px 0 24px; }
 
 .top { display: flex; align-items: center; gap: 18px; margin: 0 0 18px; }
-.top img { width: 84px; height: 84px; border-radius: 20px; rotate: -5deg; box-shadow: 0 10px 24px rgba(10, 20, 30, .16); flex: none; }
+.top img { width: 84px; height: 84px; border-radius: 20px; rotate: -5deg; box-shadow: 0 10px 24px rgba(60, 20, 50, .16); flex: none; }
 h1 { font: 800 clamp(2.6rem, 10vw, 3.8rem)/.98 var(--sans); letter-spacing: -.025em; word-spacing: .08em; margin: 0; text-wrap: balance; }
 main > h1:first-child, h1.page { margin: 0 0 16px; }
 .sub { font-size: 1.25rem; line-height: 1.45; margin: 0 0 30px; max-width: 26em; text-wrap: pretty; }
@@ -48,9 +48,10 @@ h2 + .q { margin-top: 8px; }
 /* The toy list: a little confetti square in front of each */
 ul { list-style: none; margin: 0 0 20px; padding: 0; }
 ul li { position: relative; padding-left: 1.6em; margin: 0 0 12px; }
-ul li::before { content: ""; position: absolute; left: .15em; top: .58em; width: .5em; height: .5em; border-radius: 2px; background: var(--accent); rotate: 20deg; }
-ul li:nth-child(3n+2)::before { rotate: -15deg; opacity: .7; }
-ul li:nth-child(3n)::before { rotate: 40deg; opacity: .45; }
+ul li::before { content: ""; position: absolute; left: .15em; top: .58em; width: .5em; height: .5em; border-radius: 2px; background: #1f9e9a; rotate: 20deg; }
+ul li:nth-child(4n+2)::before { background: #e2b33c; rotate: -15deg; }
+ul li:nth-child(4n+3)::before { background: #e86fa0; rotate: 40deg; }
+ul li:nth-child(4n)::before { background: #7b5cc4; rotate: -30deg; }
 ol { margin: 0 0 16px; padding-left: 1.3em; }
 ol li { margin: 0 0 8px; }
 
